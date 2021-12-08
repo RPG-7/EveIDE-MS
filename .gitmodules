@@ -1,0 +1,18 @@
+[submodule "modules/OpenRAM"]
+	path = modules/OpenRAM
+	url = https://github.com/rpg-7/OpenRAM
+[submodule "modules/DFFRAM"]
+	path = modules/DFFRAM
+	url = https://github.com/rpg-7/DFFRAM
+[submodule "modules/SureLog"]
+	path = modules/SureLog
+	url = https://github.com/chipsalliance/surelog
+[submodule "modules/xschem"]
+	path = modules/xschem
+	url = https://github.com/StefanSchippers/xschem.git
+[submodule "reference/Fault"]
+	path = reference/Fault
+	url = https://github.com/Cloud-V/fault
+[submodule "modules/netlist_parser"]
+	path = modules/netlist_parser
+	url = https://github.com/RPG-7/nlviewer

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>970</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>EveIDE-MS</string>
+  </property>
+  <property name="windowOpacity">
+   <double>0.000000000000000</double>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>951</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="2,1,0" columnstretch="0,0,0">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item row="0" column="0">
+      <widget class="QTreeWidget" name="treeWidget">
+       <column>
+        <property name="text">
+         <string>Project</string>
+        </property>
+       </column>
+       <item>
+        <property name="text">
+         <string>Analog</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Module1</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>Digital</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Module2</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>IP Core</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Memory IP1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OTP1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>eFPGA</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ROM1</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>PDK</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>SKY130A</string>
+         </property>
+        </item>
+       </item>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QTreeWidget" name="treeWidget_2">
+       <column>
+        <property name="text">
+         <string>File</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Property</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Open With..</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QTableWidget" name="tableWidget"/>
+     </item>
+     <item row="1" column="0" colspan="3">
+      <widget class="QTabWidget" name="">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Action in Progress</string>
+        </attribute>
+        <widget class="QWidget" name="horizontalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>9</y>
+           <width>921</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QTreeWidget" name="treeWidget_4">
+            <column>
+             <property name="text">
+              <string>Flow</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Running Tool</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Start Time</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Elapsed Time</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Progress</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tabConsole" native="true">
+        <attribute name="title">
+         <string>Console</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPlainTextEdit" name="plainTextEdit">
+           <property name="plainText">
+            <string>OpenLane
+Interaction mode</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="text">
+            <string>&gt;&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Tool Log</string>
+        </attribute>
+        <widget class="QWidget" name="horizontalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>9</y>
+           <width>931</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,4">
+          <item>
+           <widget class="QTreeWidget" name="treeWidget_3">
+            <column>
+             <property name="text">
+              <string>Tool</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Run</string>
+             </property>
+            </column>
+            <item>
+             <property name="text">
+              <string>Yosys</string>
+             </property>
+             <property name="text">
+              <string>Yosys-2021xxxx.log</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPlainTextEdit" name="plainTextEdit_2"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>970</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_File"/>
+    <addaction name="actionOpen_File"/>
+    <addaction name="actionCut_File"/>
+    <addaction name="actionCopy_File"/>
+    <addaction name="actionDelete_File"/>
+    <addaction name="actionImport_File"/>
+    <addaction name="actionExport_File"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Project</string>
+    </property>
+    <addaction name="actionNew_Project"/>
+    <addaction name="actionOpen_Project"/>
+    <addaction name="actionProject_Setting"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose_Project"/>
+    <addaction name="actionClean_run_file"/>
+    <addaction name="separator"/>
+    <addaction name="actionImport_PDK"/>
+    <addaction name="actionExport_PDK"/>
+    <addaction name="separator"/>
+    <addaction name="actionBackup_as"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit_2">
+    <property name="title">
+     <string>Version Control</string>
+    </property>
+    <addaction name="actionGit_Commit"/>
+    <addaction name="actionGit_Pull"/>
+    <addaction name="actionGIt_Push"/>
+    <addaction name="actionGit_Setting"/>
+   </widget>
+   <widget class="QMenu" name="menuToolbox">
+    <property name="title">
+     <string>Toolbox</string>
+    </property>
+    <addaction name="actionPDK_Converter"/>
+    <addaction name="actionTechfile_Editor"/>
+    <addaction name="actionIP_Generators"/>
+   </widget>
+   <widget class="QMenu" name="menuSystem">
+    <property name="title">
+     <string>OpenLane</string>
+    </property>
+    <addaction name="actionConnect_to_Docker"/>
+    <addaction name="actionDisconnect_from_Docker"/>
+    <addaction name="actionDocker_Setting"/>
+    <addaction name="actionReset_Docker"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuEdit_2"/>
+   <addaction name="menuToolbox"/>
+   <addaction name="menuSystem"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew_File">
+   <property name="text">
+    <string>New File...</string>
+   </property>
+  </action>
+  <action name="actionIP_Generators">
+   <property name="text">
+    <string>IP Generators</string>
+   </property>
+  </action>
+  <action name="actionCopy_File">
+   <property name="text">
+    <string>Copy File</string>
+   </property>
+  </action>
+  <action name="actionCut_File">
+   <property name="text">
+    <string>Move File</string>
+   </property>
+  </action>
+  <action name="actionNew_Project">
+   <property name="text">
+    <string>New Project</string>
+   </property>
+  </action>
+  <action name="actionOpen_Project">
+   <property name="text">
+    <string>Open Project</string>
+   </property>
+  </action>
+  <action name="actionClose_Project">
+   <property name="text">
+    <string>Close Project</string>
+   </property>
+  </action>
+  <action name="actionClean_run_file">
+   <property name="text">
+    <string>Clean run file</string>
+   </property>
+  </action>
+  <action name="actionBackup_as">
+   <property name="text">
+    <string>Backup as...</string>
+   </property>
+  </action>
+  <action name="actionTechfile_Editor">
+   <property name="text">
+    <string>Techfile Editor</string>
+   </property>
+  </action>
+  <action name="actionProject_Setting">
+   <property name="text">
+    <string>Project Setting</string>
+   </property>
+  </action>
+  <action name="actionImport_File">
+   <property name="text">
+    <string>Import File...</string>
+   </property>
+  </action>
+  <action name="actionExport_File">
+   <property name="text">
+    <string>Export File...</string>
+   </property>
+  </action>
+  <action name="actionOpen_File">
+   <property name="text">
+    <string>Open File...</string>
+   </property>
+  </action>
+  <action name="actionDelete_File">
+   <property name="text">
+    <string>Delete File</string>
+   </property>
+  </action>
+  <action name="actionGit_Commit">
+   <property name="text">
+    <string>Git Commit</string>
+   </property>
+  </action>
+  <action name="actionGit_Pull">
+   <property name="text">
+    <string>Git Pull</string>
+   </property>
+  </action>
+  <action name="actionGIt_Push">
+   <property name="text">
+    <string>Git Push</string>
+   </property>
+  </action>
+  <action name="actionGit_Setting">
+   <property name="text">
+    <string>Git Setting</string>
+   </property>
+  </action>
+  <action name="actionImport_PDK">
+   <property name="text">
+    <string>Import PDK</string>
+   </property>
+  </action>
+  <action name="actionExport_PDK">
+   <property name="text">
+    <string>Export PDK</string>
+   </property>
+  </action>
+  <action name="actionPDK_Converter">
+   <property name="text">
+    <string>PDK Converter</string>
+   </property>
+  </action>
+  <action name="actionConnect_to_Docker">
+   <property name="text">
+    <string>Connect to Docker</string>
+   </property>
+  </action>
+  <action name="actionDisconnect_from_Docker">
+   <property name="text">
+    <string>Disconnect from Docker</string>
+   </property>
+  </action>
+  <action name="actionDocker_Setting">
+   <property name="text">
+    <string>Docker Setting</string>
+   </property>
+  </action>
+  <action name="actionReset_Docker">
+   <property name="text">
+    <string>Reset Docker</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
